@@ -27,7 +27,7 @@ Porject4: 3的進階 要加入Call function的能力    (12.5%)
 ## 使用工具
 - 環境:   Visual Studio Code
 - 程式語言: C++
-- AI輔助工具: ChatGPT3.5、Github Copilot、coze(內涵ChatGPT4.0 Turbo)
+- AI輔助工具: ChatGPT3.5、Github Copilot、coze(內含ChatGPT4.0 Turbo)
 - 心智圖: XMind
 
 
