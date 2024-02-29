@@ -19,8 +19,8 @@
   
 ## 簡介
 此程式為中原大學三下PL(程式語言)project 占分70% 分為 project1~4  
-Project1: 基礎的運算能力及變數宣告 (15%)  
-Project2: C語言文法的check (25%)  
+Project1: 分割token及基礎的運算能力及變數宣告 (15%)  
+Project2: OurC語言文法的check(不需要實際運算) (25%)  
 Project3: 2的進階 除了確認文法的正確性還要加上運算能力及輸出答案  (17.5%)  
 Porject4: 3的進階 要加入Call function的能力    (12.5%)
 
