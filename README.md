@@ -35,6 +35,27 @@ Porject4: 3的進階 要加入Call function的能力    (12.5%)
 
 #### Project1
 
+![Project1](/picture/Xmind/Project1.png)
+
+- 程式運作流程: 
+    1. 讀取TestNum
+    2. 將字串分割成token，並判斷token的類型
+    3. 每切成功一個token就放進parser中，當parser長成一個完整的運算式時，就進行運算
+    4. 運算完後，將結果放進變數中並且輸出
+
+- 提醒:
+    1. 必須實作能Interact的程式 舉例來說當讀取到 "abc + \n"時，應該要及時報錯 Undefined identifier: abc 而不是等到讀取到 ';' 才輸出
+    2. 在parse時可以順便生成**AST**(Abstrac Syntax Tree) ， 計算部分交給其他class處理
+    3. 可以使用try catch來處理錯誤
+
+- 設問:  
+    - *為什麼真的建出一顆AST，而不是直接計算?*  
+        為了後面Project鋪路，在進行程式的運算時，預想到可能有statement(e.g. while if)問題(以同樣tree結構可建立而成)，並且也較為直觀。
+    - *為什麼要try catch?*  
+        因為只要出現錯誤就會直接flush buffer，並且輸出錯誤訊息，而不會等到讀取到';'才輸出錯誤訊息，可以使程式間耦合性降低，並且可以更快速的找到錯誤點。
+    - *為什麼要用Interact的程式?*  
+        因為在實際使用程式時，不會一次輸入所有的運算式，而是一次一個token的Error check，所以必須要能及時的報錯。
+
 
 #### Project2
 
