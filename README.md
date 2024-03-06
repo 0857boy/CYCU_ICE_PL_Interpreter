@@ -56,7 +56,7 @@ Porject4: 3的進階 要加入Call function的能力    (12.5%)
     - *為什麼要用Interact的程式?*  
         因為在實際使用程式時，不會一次輸入所有的運算式，而是一次一個token的Error check，所以必須要能及時的報錯。
 
-- 執行範例圖示:
+- 執行範例圖示:  
     ![Project1EXE](/picture/project/project1.png)
 
 #### Project2
