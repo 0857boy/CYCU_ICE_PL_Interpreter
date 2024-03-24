@@ -68,9 +68,32 @@ Porject4: 3的進階 要加入Call function的能力    (12.5%)
 
 ---
 #### Project2
-
+ 跳過
 ---
 #### Project3
+- 程式運作流程(與Project1大致相同): 
+    1. 讀取TestNum
+    2. 將字串分割成token，並判斷token的類型
+    3. 每切成功一個token就放進parser中，當parser長成一個完整的AST樹時，就進行模擬
+    4. 模擬完成後，依照指令類型輸出結果例如: Statement executed ...
+
+- 提醒:
+    1. if或while以及do內的宣告會變成區域變數，所以在if內宣告的變數，不會影響到外面的變數
+    2. 變數當作一種 **class** ，因為有可能會轉型例如 陣列轉單個
+    3. 可以製作 **假執行**，因為有可能遇到還未長成一棵樹就需檢查區域變數的存在，例如while內的區域變數，簡單來說在生成樹時，假裝宣告這個數
+    4. float運算大數可能會變成科學符號
+
+- Scope概念  
+在寫Project1 的時候就很好奇各個變數可視範圍的邏輯，也不太想參照課本的ID table，於是依照自己的想像力做出來以Scope為主體的Object，跟迴圈一樣可以洋蔥式包覆，以及擁有向外搜尋的功能  
+![Scope概念圖](/picture/scope概念.jpg)
+
+- AST
+目的是為了簡化運算流程，哪個部分出狀況改那個部分就可以，實際架構依個人喜好設定即可
+![AST概念圖](/picture/Xmind/AST.png)
+
+- 設問:  
+    - *為什麼每次運算都需回傳ID?*  
+        模擬Python的方式(萬物皆Object)，可以延伸至回傳array function等
 ---
 #### Project4
 
