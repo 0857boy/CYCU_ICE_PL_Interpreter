@@ -94,6 +94,10 @@ Porject4: 3的進階 要加入Call function的能力    (12.5%)
 - 設問:  
     - *為什麼每次運算都需回傳ID?*  
         模擬Python的方式(萬物皆Object)，可以延伸至回傳array function等
+
+- 執行範例圖示:
+    ![Project3EXE](/picture/project/project3.png)
+    
 ---
 #### Project4
 
