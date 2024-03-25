@@ -2,7 +2,7 @@
 
 ## 前言 
 
-![夏老大形象照](/picture/夏老大形象照.png)
+![夏老大形象照](/picture/HsiaBigWig.png)
 
 *以下取自夏老大的名言*
 
@@ -61,7 +61,7 @@ Porject4: 3的進階 要加入Call function的能力    (12.5%)
     ![Project1EXE](/picture/project/project1.png)
 ---
 > 「咱大家來爬偉大的山 看彼美麗的海岸」 - 《關閉太陽》 **血肉果汁機**
-![BOSS](/picture/魔王.png)
+![BOSS](/picture/Boss.png)
 
 做完Project1後，聽到助教建議使用java，可謂心涼大半，但後來想想寫程式本來就是一個解決問題的過程，所以我暫時不會轉換程式語言，而是會繼續先前用C++寫的Project1架構做延伸。我想這就是寫程式的固執與浪漫Na~  雖然大家都說Project 1與234差很多，但我認為對於我所認知的AST架構來說，只是文法上面的概念些微不同，本質還是一樣的。  
 -2024/3/7 Joe
@@ -85,7 +85,7 @@ Porject4: 3的進階 要加入Call function的能力    (12.5%)
 
 - Scope概念  
 在寫Project1 的時候就很好奇各個變數可視範圍的邏輯，也不太想參照課本的ID table，於是依照自己的想像力做出來以Scope為主體的Object，跟迴圈一樣可以洋蔥式包覆，以及擁有向外搜尋的功能  
-![Scope概念圖](/picture/scope概念.jpg)
+![Scope概念圖](/picture/ScopeConcept.jpg)
 
 - AST
 目的是為了簡化運算流程，哪個部分出狀況改那個部分就可以，實際架構依個人喜好設定即可
