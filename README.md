@@ -85,7 +85,7 @@ Porject4: 3的進階 要加入Call function的能力    (12.5%)
 
 - Scope概念  
 在寫Project1 的時候就很好奇各個變數可視範圍的邏輯，也不太想參照課本的ID table，於是依照自己的想像力做出來以Scope為主體的Object，跟迴圈一樣可以洋蔥式包覆，以及擁有向外搜尋的功能  
-![Scope概念圖](/picture/ScopeConcept.jpg)
+![Scope概念圖](/picture/LogicConcept/ScopeConcept.jpg)
 
 - AST
 目的是為了簡化運算流程，哪個部分出狀況改那個部分就可以，實際架構依個人喜好設定即可
@@ -101,7 +101,33 @@ Porject4: 3的進階 要加入Call function的能力    (12.5%)
 ---
 #### Project4
 
+- 程式運作流程(與Project3一模一樣): 
+    1. 讀取TestNum
+    2. 將字串分割成token，並判斷token的類型
+    3. 每切成功一個token就放進parser中，當parser長成一個完整的AST樹時，就進行模擬
+    4. 模擬完成後，依照指令類型輸出結果例如: Statement executed ...
 
+- 提醒:
+    1. function傳址功能也要設計成洋蔥式
+    2. function內的變數不會影響到外面的變數
+    3. 在定義時就必須檢查所有error，例如變數是否已宣告過，function是否已定義過等等
 
+- FunctionCall概念  
+由於我的架構是Scope包覆為主，所以要特別注意在function call時不能取用到同名還未被宣告的變數，所以增加了buffer的功能，當function call時，會將新宣告的變數存到buffer
+，等到function call 所有變數宣告完後，再將buffer的變數存到Scope中，這樣就可以避免變數名稱衝突的問題
+![FunctionCall概念圖](/picture/LogicConcept/FunctionCallConcept.jpg)
+
+- 設問:
+    - *如何呼叫function?*  
+        由於在一開始做Project1的時候就有想過function的概念，所以對我來說不管是整個function或是整個程式都可以用節點來表示，只要將function節點存在vector中，當遇到function call時，就可以直接呼叫function節點
+
+    - *如何取址?*
+        採用python的概念，任何identifer都是Object，所以只要將Object的指標傳遞給欲取址的identifer即可
+    
+    - *如何避免變數名稱衝突?*
+        透過buffer的概念，當function call時，會將新宣告的變數存到buffer，等到function call 所有變數宣告完後，再將buffer的變數存到Scope中，這樣就可以避免變數名稱衝突的問題
+
+- 執行範例圖示:
+    ![Project4EXE](/picture/project/Project4.png)
 
 
