@@ -127,7 +127,25 @@ Porject4: 3的進階 要加入Call function的能力    (12.5%)
     - *如何避免變數名稱衝突?*
         透過buffer的概念，當function call時，會將新宣告的變數存到buffer，等到function call 所有變數宣告完後，再將buffer的變數存到Scope中，這樣就可以避免變數名稱衝突的問題
 
-- 執行範例圖示:
+- 執行範例圖示:  
     ![Project4EXE](/picture/project/Project4.png)
 
+---
+
+## PAL Project紀念截圖
+因為有可能是最後一屆使用PAL Project，所以特此紀念
+
+![ProblemSolve](/picture/project/CongratulationProblemSolve.png)
+
+![Project 3 and 4](/picture/project/34system.png)
+
+![ProjectSolve](/picture/project/CongratulationProjectSolve.png)
+
+---
+
+![BrightFuture](/picture/BrightFurture.png)
+
+## 結語
+雖然這次PL Project花了很多時間，但也學到了很多東西，例如AST、Scope、FunctionCall等等，感謝夏老大的教導，讓我能夠更加了解程式語言的本質，也感謝助教的提點，讓我能夠避開PAL的雷點，也感謝同學的討論，每次的交流都讓我學到不同的創意，也感謝自己的堅持，讓我能夠更加了解程式語言之美。雖然到了大三大家都很忙，不管有沒有寫完PL的各位都祝福大家能達成心中的理想。  
+-- 2024/3/28 Joe
 
