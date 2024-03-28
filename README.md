@@ -121,10 +121,10 @@ Porject4: 3的進階 要加入Call function的能力    (12.5%)
     - *如何呼叫function?*  
         由於在一開始做Project1的時候就有想過function的概念，所以對我來說不管是整個function或是整個程式都可以用節點來表示，只要將function節點存在vector中，當遇到function call時，就可以直接呼叫function節點
 
-    - *如何取址?*
+    - *如何取址?*  
         採用python的概念，任何identifer都是Object，所以只要將Object的指標傳遞給欲取址的identifer即可
     
-    - *如何避免變數名稱衝突?*
+    - *如何避免變數名稱衝突?*  
         透過buffer的概念，當function call時，會將新宣告的變數存到buffer，等到function call 所有變數宣告完後，再將buffer的變數存到Scope中，這樣就可以避免變數名稱衝突的問題
 
 - 執行範例圖示:  
