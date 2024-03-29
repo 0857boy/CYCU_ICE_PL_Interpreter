@@ -59,6 +59,7 @@ Porject4: 3的進階 要加入Call function的能力    (12.5%)
 
 - 執行範例圖示:  
     ![Project1EXE](/picture/project/project1.png)
+    ![Project1GIF](/picture/project/Project1GIF.gif)
 ---
 > 「咱大家來爬偉大的山 看彼美麗的海岸」 - 《關閉太陽》 **血肉果汁機**
 ![BOSS](/picture/Boss.png)
@@ -129,6 +130,7 @@ Porject4: 3的進階 要加入Call function的能力    (12.5%)
 
 - 執行範例圖示:  
     ![Project4EXE](/picture/project/Project4.png)
+    ![Project4GIF](/picture/project/Project4GIF.gif)
 
 ---
 
