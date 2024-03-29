@@ -98,6 +98,7 @@ Porject4: 3的進階 要加入Call function的能力    (12.5%)
 
 - 執行範例圖示:  
     ![Project3EXE](/picture/project/Project3.png)
+    ![Project3GIF](/picture/project/Project3GIF.gif)
 
 ---
 #### Project4
