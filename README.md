@@ -159,3 +159,6 @@ Porject4: 3的進階 要加入Call function的能力    (12.5%)
     1. 轉成intermediate code再做運算(類似機器碼的概念)
     2. 用原本Parser的遞迴結構做運算(缺點是會增加很多code，以及不好維護)
     3. 用stack的概念做運算(類似後綴式的概念)
+- 有趣的發現
+    1. 運算的優先順序其實已經implicit在Parser的結構中，所以不需要額外的處理
+    2. 用AST的概念可以很好的處理statement的問題，例如if while等等(可以快速Jump到下一個statement)
