@@ -159,6 +159,21 @@ Porject4: 3的進階 要加入Call function的能力    (12.5%)
     1. 轉成intermediate code再做運算(類似機器碼的概念)
     2. 用原本Parser的遞迴結構做運算(缺點是會增加很多code，以及不好維護)
     3. 用stack的概念做運算(類似後綴式的概念)
+    4. [Pratt Parser](https://matklad.github.io/2020/04/13/simple-but-powerful-pratt-parsing.html)  
+        主要特點是能夠處理運算子的左右綁定性（也就是運算子的結合性）和運算子的優先順序。這種解析器的核心思想是將每個運算子賦予兩種優先級：左綁定力（left binding power）和右綁定力（right binding power）。
+        ```pseudocode
+        function parseExpression(precedence)
+            token = consumeToken()
+            left = getPrefixParselet(token).parse(token)
+        
+            while precedence < getInfixParselet(currentToken()).precedence
+                token = consumeToken()
+                left = getInfixParselet(token).parse(left, token)
+        
+            return left
+        ```
+        在這個虛擬碼中，parseExpression函數接受一個優先級並解析一個表達式。它首先消耗一個token，然後使用該token的前綴解析器來解析左邊的表達式。然後，只要當前token的中綴解析器的優先級高於傳入的優先級，它就會消耗token並使用中綴解析器來解析右邊的表達式。最後，它返回解析的表達式。
+
 - 有趣的發現
     1. 運算的優先順序其實已經implicit在Parser的結構中，所以不需要額外的處理
     2. 用AST的概念可以很好的處理statement的問題，例如if while等等(可以快速Jump到下一個statement)
