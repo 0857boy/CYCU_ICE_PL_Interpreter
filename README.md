@@ -58,7 +58,23 @@ Porject4: 3的進階 要加入Call function的能力    (12.5%)
         因為只要出現錯誤就會直接flush buffer，並且輸出錯誤訊息，而不會等到讀取到';'才輸出錯誤訊息，可以使程式間耦合性降低，並且可以更快速的找到錯誤點。
     - *為什麼要強調一定要製作Interact的程式?*  
         因為在實際使用程式時，不會一次輸入所有的運算式，而是一次一個token的Error check，所以必須要能及時的報錯。
-
+- Proj1樹狀圖
+    ```cmd
+    3+4+5*3/2-1;
+    
+    ├──-
+    │  ├──+
+    │  │  ├──+
+    │  │  │  ├──3
+    │  │  │  └──4
+    │  │  └──*
+    │  │     ├──5
+    │  │     └──/
+    │  │        ├──3
+    │  │        └──2
+    │  └──1
+    14
+    ```
 - 執行範例圖示:  
     ![Project1EXE](/picture/project/project1.png)
     ![Project1GIF](/picture/project/Project1GIF.gif)
