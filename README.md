@@ -73,7 +73,6 @@ Porject4: 3的進階 要加入Call function的能力    (12.5%)
     │  │        ├──3
     │  │        └──2
     │  └──1
-    14
     ```
 - 執行範例圖示:  
     ![Project1EXE](/picture/project/project1.png)
