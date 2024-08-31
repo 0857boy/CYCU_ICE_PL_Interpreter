@@ -193,4 +193,4 @@ Porject4: 3的進階 要加入Call function的能力    (12.5%)
     1. 運算的優先順序其實已經implicit在Parser的結構中，所以不需要額外的處理
     2. 用AST的概念可以很好的處理statement的問題，例如if while等等(可以快速Jump到下一個statement)
     3. PeekToken的實作沒什麼特別的，類似雙指標的概念，跑的比當前的指標快一步罷了
-    4. 第四題隱測可能是float 的 PPMM
+    4. Pro3第四題隱測可能是float 的 PPMM
