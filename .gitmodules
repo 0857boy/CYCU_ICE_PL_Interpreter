@@ -1,3 +1,6 @@
 [submodule "project/code"]
 	path = project/code
 	url = https://github.com/0857boy/OurC-code
+[submodule "project/AutoJudge"]
+	path = project/AutoJudge
+	url = https://github.com/0857boy/CYCU_PL_Judge
