@@ -1,4 +1,4 @@
-# 簡易版C語言Interpreter
+# 類C語言Interpreter
 
 ## 前言 
 
